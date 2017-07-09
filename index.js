@@ -13,7 +13,8 @@ app.route('/')
         res.json(answer)
     })
     
-var port = process.env.Port||3000
+var port = process.env.PORT||3000
 app.listen(port , function() {
+    console.log(process.env.PORT)
     console.log('Node.js listening on port ' + port);
 })
